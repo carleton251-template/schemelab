@@ -1,7 +1,7 @@
 (define keep-first-n
   (lambda (n lst)
-    (cond [(> n (length lst)) #f]
-          [(< n 0) #f]
+    (cond [(> n (length lst)) '()]
+          [(< n 0) '()]
           [(equal? n 0) '()]
           [else (cons (car lst)
                       (keep-first-n (- n 1) (cdr lst)))])))
