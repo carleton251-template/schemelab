@@ -24,6 +24,7 @@ jobs:
           sudo apt-get -qq install guile-2.2
       - name: Run M Tests
         run: |
+          echo "M tests"
           ./test-m
 
   meets-and-exemplary:
@@ -37,5 +38,6 @@ jobs:
           sudo apt-get -qq install guile-2.2
       - name: Run M and E Tests
         run: |
+          echo "M tests first, E tests will run if E succeeds"
           ./test-m
           ./test-e
