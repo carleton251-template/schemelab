@@ -35,7 +35,7 @@ jobs:
       - name: Install Guile
         run: |
           sudo apt-get -qq install guile-2.2
-      - name: Run E Tests
+      - name: Run M and E Tests
         run: |
           ./test-m
           ./test-e
